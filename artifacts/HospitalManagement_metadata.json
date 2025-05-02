@@ -1,0 +1,194 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_receptionistContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_patientContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dateOfBirth",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "medicalRecords",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "nextVisitDate",
+						"type": "string"
+					}
+				],
+				"name": "addPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patientContract",
+				"outputs": [
+					{
+						"internalType": "contract PatientContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "receptionistContract",
+				"outputs": [
+					{
+						"internalType": "contract ReceptionistContract",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "medicalRecords",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "nextVisitDate",
+						"type": "string"
+					}
+				],
+				"name": "updatePatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dob",
+						"type": "string"
+					}
+				],
+				"name": "viewRecord",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hospital/HospitalManagement.sol": "HospitalManagement"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hospital/HospitalManagement.sol": {
+			"keccak256": "0xe0070b84b110b3bc206a7d7960508d0adb7a3c14621a5416558b9f28409b0578",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2cef2a676b486d3cb476c5c11519a56475131040c5d0070e29fb377ee7ce8728",
+				"dweb:/ipfs/QmbR8rsYieRQ8ySR1738WDMhaR96XHC8fbnWcqnrozieoD"
+			]
+		},
+		"hospital/PatientContract.sol": {
+			"keccak256": "0x0b5b31f11d75b88df5d97d0fb0f925baa2da61f39d8b875f32646aa76678cc3d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42df1940bbaf9a754f1eb7aa9025cee4aa0f3febc483447c3fdda036ae9fa4b2",
+				"dweb:/ipfs/Qmb5cfSQtxkdtZdciUe8EdNaTuaA2q1YZsz9XSbp923EAS"
+			]
+		},
+		"hospital/ReceptionistContract.sol": {
+			"keccak256": "0x2104976fea0d7f08256226b937de14dc55ee782ac0b7e8827820c5f04e378fca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ac66eab7a054b868bf77569bf0d209770342fda5f071789913afcd4389314a4",
+				"dweb:/ipfs/QmcEHDXqqfFc6ANZ51pNvXN88xPskcUSTR58x23YhXGb5W"
+			]
+		}
+	},
+	"version": 1
+}

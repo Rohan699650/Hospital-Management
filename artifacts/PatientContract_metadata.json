@@ -1,0 +1,175 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dateOfBirth",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "medicalRecords",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "nextVisitDate",
+						"type": "string"
+					}
+				],
+				"name": "addPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "patientRecords",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dateOfBirth",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "medicalRecords",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "nextVisitDate",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "medicalRecords",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "nextVisitDate",
+						"type": "string"
+					}
+				],
+				"name": "updatePatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "phoneNumber",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "dob",
+						"type": "string"
+					}
+				],
+				"name": "viewRecord",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hospital/PatientContract.sol": "PatientContract"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hospital/PatientContract.sol": {
+			"keccak256": "0x0b5b31f11d75b88df5d97d0fb0f925baa2da61f39d8b875f32646aa76678cc3d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42df1940bbaf9a754f1eb7aa9025cee4aa0f3febc483447c3fdda036ae9fa4b2",
+				"dweb:/ipfs/Qmb5cfSQtxkdtZdciUe8EdNaTuaA2q1YZsz9XSbp923EAS"
+			]
+		}
+	},
+	"version": 1
+}
